@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Kartu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="kepala">
+    <h1>Galeri Kartu</h1>
+    <p>Klik kartu untuk melihat detail. Gunakan filter untuk memilih kategori.</p>
+  </header>
+
+  <nav class="filter" aria-label="Filter kategori" id="filter"></nav>
+
+  <main>
+    <ul class="grid" id="grid"></ul>
+  </main>
+
+  <div class="modal" id="modal" hidden>
+    <div class="isi" role="dialog" aria-modal="true" aria-labelledby="modal-judul">
+      <div class="gambar" id="modal-gambar"></div>
+      <h2 id="modal-judul"></h2>
+      <p id="modal-kategori" class="kategori"></p>
+      <p id="modal-deskripsi"></p>
+      <button type="button" id="modal-tutup">Tutup</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
